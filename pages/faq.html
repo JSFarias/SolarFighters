@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Q&A</title>
+    <link rel="icon" href="../images/Geral/imgPerfilSF.PNG" />
+	<meta charset="utf-8" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="http://solarfighters.xyz/pages/questions.html">
+    <meta property="og:title" content="Solar Fighters :: Perguntas&Respostas">
+    <meta property="og:site_name" content="Solar Fighters">
+    <meta property="og:description" content="Saiba um pouco mais.">
+    <meta property="og:image" content="http://solarfighters.xyz/images/Geral/fb/fb_questions.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200"> 
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="966242223397117"/>
+
+    
+
+    <!--
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+        -->
+
+
+    <link href="../css/estilo-geral.css" rel="stylesheet" />
+
+    <script>
+        var arrLang1 = {
+            'pt': {
+                'pag-titulo': 'PERGUNTAS & RESPOSTAS',
+                'ask1': 'O quê pretende com o game?',
+                'answer1': 'Além de aprender muito, quero mostrar que sou um desenvolvedor de garra, porque tenho paixão pelo que faço e não me intimido com desafios. Também quero sentir a experiência da aceitação, ou não, do game proposto para o público e, lógicamente, lançá-lo no mercado se possível.',
+                'ask2': 'Porque escolheu um game de luta?',
+                'answer2': 'Por conta do grande desafio que era desenvolvê-lo. Além disso, o foco desse tipo de gênero são os personagens e para o desenvolvedor isso foi um prato cheio.',
+                'ask3': 'Porque você está desenvolvendo o game sozinho?',
+                'answer3': 'Aprender muito com os estudos e as práticas, tanto no desenvolvimento de design, planejamento e arte, quanto das programações e implementações. Meu intuito é compreender a pipeline de produção de um game num todo.',
+                'ask4': 'Quando o game estará concluído?',
+                'answer4': 'Final de 2018 na Steam.'
+            },
+            'en': {
+                'pag-titulo': 'ASKS & ANSWERS',
+                'ask1': 'What do pretend with the game?',
+                'answer1': 'In addition to learning a lot, I want to show that I am a talented developer, because I have a passion for what I do and do not intimidate me with challenges. I also want to feel the experience of accepting, or not, the game proposed to the public and, logically, launching it in the market if possible.',
+                'ask2': 'Why have you chose a fighting game?',
+                'answer2': 'Because of the great challenge that was to develop it. In addition, the focus of this type of genre are the characters and for the developer this was a excellent.',
+                'ask3': 'Why are you developing it alone?',
+                'answer3': 'Learn a lot from studies and practices, both in design, planning and art development, as well as in schedules and implementations. My intention is to understand the production pipeline of a game in one whole.',
+                'ask4': 'When does it will be concluded?',
+                'answer4': 'At the end of 2018 at Steam.'
+            }
+        };
+
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <style>
+        body {
+            /*background-image: url('../images/BGs/bg_questions.jpg');*/
+            background-image: url('../images/BGs/bg_personagens.jpg');
+        }
+        .questions-txt{
+            padding: 10px 20px 20px 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <!------------------------HEADER------------------>
+    <img class="linha-degrade" src="../images/Geral/linha_degrade.png" />
+    <div class="panel panel-heading">
+        <div class="header">
+            <div class="pull-left" id="header"></div>
+            <!-------------------------------IDIOMAS-->
+            <a class="translate pull-right" id="pt"><img class="idioma" src="../../images/Geral/linguas_pt.png" /></a>
+            <a class="translate pull-right" id="en"><img class="idioma" src="../../images/Geral/linguas_en.png" /></a>
+        </div>
+    </div>     
+    <img class="linha-degrade" src="../images/Geral/linha_degrade.png" />    
+
+    <!------------------------CONTEUDO------------------>
+    <div class="container"> 
+
+        <!-----------------------PAG TITULO-------------->
+        <div class="bg-txt lang" key="pag-titulo">
+            <p>ASKS & ANSWERS</p>
+        </div>
+
+        <div class="content">
+            <div class="questions-txt">
+                <p class="lang sub-topicos1" key="ask1"></p>
+                <p class="lang txt-body1" key="answer1"></p></br>
+
+                <p class="lang sub-topicos1" key="ask2"></p>
+                <p class="lang txt-body1" key="answer2"></p></br>
+
+
+                <p class="lang sub-topicos1" key="ask3"></p>
+                <p class="lang txt-body1" key="answer3"></p></br>
+
+
+                <p class="lang sub-topicos1" key="ask4"></p>
+                <p class="lang txt-body1" key="answer4"></p>
+            </div>
+        </div>
+
+        <!------------------------FOOTER------------------>
+        <div class="panel panel-footer">
+            <div id="footer"></div>
+        </div>
+    </div>
+
+</body>
+</html>

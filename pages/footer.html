@@ -1,0 +1,42 @@
+﻿<script>
+    var arrLang2 = {
+        'pt': {
+            'rights': '2018 - Jhonatas da Silva Farias - São Paulo - Brasil'
+        },
+        'en': {
+            'rights': '2018 - Jhonatas da Silva Farias - São Paulo - Brazil'
+        }
+    };
+
+    $(function () {
+        //carrega no começo
+        var lang = readCookie("idioma");
+
+        if (lang == null) {
+            lang = 'en';
+            writeCookie("idioma", lang, 1);
+        }
+
+        $('.lang').each(function (index, element) {
+            $(this).text(arrLang2[lang][$(this).attr('key')]);
+        });
+
+        //traduz
+        $('.translate').click(function () {
+            var lang = $(this).attr('id');
+            $('.lang').each(function (index, element) {
+                $(this).text(arrLang2[lang][$(this).attr('key')]);
+            });
+
+            writeCookie("idioma", lang, 1);
+        });
+    });
+</script>
+
+<div>
+    <img src="../../images/Geral/logoFN.png" />
+</div></br>
+<div id="direitos" class="lang" key="rights">
+    2018 - Jhonatas da Silva Farias - São Paulo - Brazil
+</div></br>
+

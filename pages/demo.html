@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+    <link rel="icon" href="../images/Geral/imgPerfilSF.PNG" />
+	<meta charset="utf-8" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="http://solarfighters.xyz/pages/demo.html">
+    <meta property="og:title" content="Solar Fighters :: DEMO">
+    <meta property="og:site_name" content="Solar Fighters">
+    <meta property="og:description" content="Gostou das artes? Baixe agora!">
+    <!--<meta property="og:image" content="http://solarfighters.xyz/images/Geral/fb/fb_downs.jpg">-->
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200"> 
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="966242223397117"/>
+        
+
+    <!--
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+        -->
+
+
+    <link href="../css/estilo-geral.css" rel="stylesheet" />
+
+    <script>
+        var arrLang1 = {
+            'pt': {
+                'txt1': 'Quer baixar a demo?',
+                'txt2': 'Baixe uma versão experimental :)',
+                'txt3': 'BAIXE AQUI!',
+                'txt4': 'Abre nova janela para Google Drive para baixar - Arquivo .zip 93MB (188MB extraído)',
+                'txt5': 'Para que o jogo execute normalmente, unzip o conteúdo clicando botão direito do mouse > Extrair Arquivo',
+                'txt6': 'Última atualização: 08-jun-2017',
+                'txt7': 'Relatório das Últimas Atualizações',
+                'txt8': '- Alguns bugs de aterrisagem dos pulos corrigidos;',
+                'txt9': '- Conceito da arma de Gaio adicionado;',                
+                'txt10': '- Algumas animações de Gaia melhoradas e adicionadas;',
+                'txt11': '- Mecânicas da AI melhoradas com ações antes faltantes;',
+                'txt12': 'Nota:',
+                'txt13': 'Como esta versão é um alpha, não há progressos no modo Arcade, nesta versão apenas simulamos alternando os adversário aleatoriamente após cada batalha. Com mais personagens implementados, um modo Arcade completo estará disponível.',
+                'txt14': 'Printscreens',
+                'txt15': 'Requerimentos Mínimos de Sistema:',
+                'txt16': 'Sistema Operacional: Win 7 64bits',
+                'txt17': 'Processador: AMD FX 4100 Quad-Core 3.6 GHz ou Intel i3 2100 3.1 GHz',
+                'txt18': 'Memoria: 4GB RAM',
+                'txt19': 'Placa-Gráfica: NVIDIA GeForce GT 520 ou AMD Radeon HD 6550D',
+                'txt20': 'Armazenamento: 188MB de espaço disponível (conteúdo extraído)',
+                'txt21': '- Adição da Classificação Indicativa (07-jun-17);',
+                'txt22': '- Janela Créditos removida (08-jun-17).',
+                'txt23': 'Dê uma olhada na demo!'
+            },
+            'en': {
+                'txt1': 'Do you want to download the demo?',
+                'txt2': 'Download an experimental version :)',
+                'txt3': 'DOWNLOAD HERE!',
+                'txt4': 'It opens a new window for Google Drive to download - File .zip 93MB (188MB extracted)',
+                'txt5': 'For the game to run properly, unzip the content by right-clicking > Extract File',
+                'txt6': 'Last update: 08-june-2017',
+                'txt7': 'Last Update Relatory',
+                'txt8': '- Some landing bugs fixed;',
+                'txt9': '- Concept/placeholder for Gaia´s weapons added;',
+                'txt10': '- Some Gaia animations enhanced and added;',
+                'txt11': '- Improved AI mechanics with previously missing actions;',
+                'txt12': 'Note:',
+                'txt13': 'Since this is an alpha, there is no progresses at the Arcade mode, in this version we simulate it toggling matches against Gaia and Luna. With more characters soon implemented, a full Arcade mode will be available.',
+                'txt14': 'Printscreens',
+                'txt15': 'Minimum Requirements System:',
+                'txt16': 'Operational System: Win 7 64bits',
+                'txt17': 'Processor: AMD FX 4100 Quad-Core 3.6 GHz or Intel i3 2100 3.1 GHz',
+                'txt18': 'Memory: 4GB RAM',
+                'txt19': 'GPU: NVIDIA GeForce GT 520 or AMD Radeon HD 6550D',
+                'txt20': 'Storage: 188MB available space (extracted content)',
+                'txt21': '- Added Brazil Rating (Inter. Rating Pending) (07-june-17);',
+                'txt22': '- Credits Window removed (08-june-17).',
+                'txt23': 'Take a look at the demo!'
+            }
+        };
+
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <style>
+        body {
+            /*background-image: url('../images/BGs/bg_downloads.jpg');*/
+            background-image: url('../images/BGs/bg_personagens.jpg');
+        }
+        #texto2{
+            font-size:16px;            
+            font-weight:500;
+            color:#ff6a00;
+        }
+        tr > td{
+            text-align:center;
+            margin:auto;
+        }
+        .table-cell > #centerImg-mod{
+            text-align:center;
+        }
+        .content-mod{
+            padding: 10px 10px 10px 10px;
+        }
+        #obs-down{
+            line-height: 20px;
+            font-size:12px;     
+        }
+
+        #updates-rel{
+            overflow:hidden;
+        }
+        .updates-box{
+            width:800px;
+            margin:auto;
+        }
+        .updates-box ul{
+            list-style:none;
+            float:left;
+        }
+        .updates-box #esq{
+            width:360px;
+        }
+        .updates-box #dir{
+            width:440px;
+        }
+
+        .printscreens-box ul{
+            list-style:none;
+        }
+        .printscreens-box li{
+            padding: 2px 0 2px 0;
+        }
+        .printscreens-box li img{
+            width:840px;
+        }
+
+        .demo-box{
+            width:860px;
+            margin:auto;
+        }
+        .demo-box ul{
+            list-style:none;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!------------------------HEADER------------------>
+    <img class="linha-degrade" src="../images/Geral/linha_degrade.png" />
+    <div class="panel panel-heading">
+        <div class="header">            
+            <div class="pull-left" id="header"></div>
+            <!-------------------------------IDIOMAS-->
+            <a class="translate pull-right" id="pt"><img class="idioma" src="../../images/Geral/linguas_pt.png" /></a>
+            <a class="translate pull-right" id="en"><img class="idioma" src="../../images/Geral/linguas_en.png" /></a>
+        </div>
+    </div>     
+    <img class="linha-degrade" src="../images/Geral/linha_degrade.png" />
+
+    <div class="container">   
+
+        <!-----------------------PAG TITULO-------------->
+        <div class="bg-txt">
+            <p>DEMO</p>
+        </div>
+        
+        <!--------------body1-------------------------->
+        <div class="content">
+            <div>                
+
+                <section>
+                    <div class="demo-box">
+                        <ul>
+                            <!--<li><iframe frameborder="0" src="https://itch.io/embed-upload/556313?color=f4f4f4" allowfullscreen="" width="860" height="560"></iframe></li>-->
+                            <li class="content-mod"><p id="obs-down" class="lang sub-topico2" key="txt23"></p></li> 
+                            <li><iframe width="860" height="484" src="https://www.youtube.com/embed/0HFcq7vp5e0?rel=0&vq=hd720" frameborder="0" allowfullscreen></iframe></li></br>
+                            <li><iframe width="860" height="484" src="https://www.youtube.com/embed/K7Aa8o7suls?rel=0&vd=hd720" frameborder="0" allowfullscreen></iframe></li></br></br>
+                        </ul>
+                    </div>
+                </section>
+                
+            </div>                       
+        </div>
+        <!--------------footer-------------------------->
+        <div class="panel panel-footer">
+            <div id="footer"></div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Warseeker</title>
+    <link rel="icon" href="../images/Geral/imgPerfilSF.PNG" />
+    <meta charset="utf-8" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="http://solarfighters.xyz/personagens/war.html">
+    <meta property="og:title" content="Solar Fighters :: Warseeker">
+    <meta property="og:site_name" content="Solar Fighters">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://solarfighters.xyz/images/Geral/fb/war_fb.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200"> 
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="966242223397117"/>
+
+    
+
+    <!--
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+        -->
+
+    <link href="../css/estilo-geral.css" rel="stylesheet" />
+    <link href="../css/heros-pages.css" rel="stylesheet" />
+
+    <script>
+        var arrLang1 = {
+            'pt': {
+                'desc': 'Descrição',
+                'persona': 'Persona:',
+                'persona-what': 'Marte',
+                'especie': 'Espécie:',
+                'especie-what': 'Rochoso',
+                'parcerias': 'Parcerias:',
+                'parcerias-what1': 'Fobos',
+                'parcerias-what2': 'Deimos',
+                'hist': 'História',
+                'hist-what': 'Warseeker é o segundo menor planeta da família telúrica, mas não se engane, pois ele faz jus ao seu nome sugestivo. Seu surgimento acompanhou a dos demais colegas na época da nebulosa gasosa. Hoje, ele é composto por estruturas corroídas dando a sua característica avermelhada marcante, e isso nada mais do que condiz piamente com sua personalidade.',
+                'perso': 'Personalidade',
+                'perso-what': 'Ele é seco, então, não se iluda com afetividades. Adepto por guerras, ele derrota impiedosamente qualquer um que estiver no seu caminho, pois seus objetos são as suas prioridades.',
+                'motiv': 'Motivação',
+                'motiv-what': 'Derrotar Gaia e reivindicar prestígio.',
+                'moves': 'Movimentos'
+            },
+            'en': {
+                'desc': 'Description',
+                'persona': 'Persona:',
+                'persona-what': 'Mars',
+                'especie': 'Sort:',
+                'especie-what': 'Rocky',
+                'parcerias': 'Partnership:',
+                'parcerias-what1': 'Fobos ',
+                'parcerias-what2': ' Deimos',
+                'hist': 'History',
+                'hist-what': 'Warseeker is the second smallest planet in the telluric family, but make no mistake, for it lives up to its suggestive name. Its emergence accompanied that of the other colleagues at the time of the gaseous nebula. Today, it is composed of corroded structures giving its striking reddish feature, and that nothing more than pities its personality.',
+                'perso': 'Personality',
+                'perso-what': 'He is rude, so do not deceive yourself with affectivity. Adept by wars, he mercilessly defeats anyone in his path, for his objects are his priorities.',
+                'motiv': 'Motivation',
+                'motiv-what': 'Defeat Gaia and claim prestige.',
+                'moves': 'Moviments'
+            }
+        };
+
+        $(function () {
+            $("#header").load("../pages/header.html");
+            $("#footer").load("../pages/footer.html");
+            $("#hero-tabs").load("hero-tabs.html");
+        });
+    </script>
+
+    <style>
+        body {
+            background-image: url('../images/BGs/bg_war.jpg');
+        }
+    </style>
+
+</head>
+<body>
+    <!------------------------HEADER------------------>
+    <img class="linha-degrade" src="../images/Geral/linha_degrade.png" />
+    <div class="panel panel-heading">
+        <div class="header">
+            <div class="pull-left" id="header"></div>
+            <!-------------------------------IDIOMAS-->
+            <a class="translate pull-right" id="pt"><img class="idioma" src="../../images/Geral/linguas_pt.png" /></a>
+            <a class="translate pull-right" id="en"><img class="idioma" src="../../images/Geral/linguas_en.png" /></a>
+        </div>
+    </div>        
+    <img class="linha-degrade" src="../images/Geral/linha_degrade.png" />
+
+    <div class="container container-mod2">
+        <!------------------------HERO TABS------------------>
+        <div id="hero-tabs"></div>
+
+        <div class="content">
+            <div>
+                <iframe src="https://www.youtube.com/embed/_Z3p5-LeaZg?rel=0&vq=hd720" frameborder="0" class="hero-video"></iframe>
+            </div></br>
+
+            <div class="lang topicos" key="desc"><p>...</p></div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <img src="../images/Personagens/war.jpg" />
+                </div>
+                <div class="hero-description table-cell">
+                    <p class="lang sub-topicos1" key="persona">...</p>
+                    <p class="lang txt-body1" key="persona-what">...</p>
+
+                    <p class="lang sub-topicos1" key="especie">...</p>
+                    <p class="lang txt-body1" key="especie-what">...</p>
+
+                    <p class="lang sub-topicos1" key="parcerias">...</p>
+                    <p class="txt-body1"><a class="lang" href="#" key="parcerias-what1">...</a>&<a class="lang" href="#" key="parcerias-what2">...</a></p>
+
+                    <p class="lang sub-topicos2" key="hist">...</p>
+                    <p class="lang txt-body1" key="hist-what">...</p>
+
+                    <p class="lang sub-topicos2" key="perso">...</p>
+                    <p class="lang txt-body1" key="perso-what">...</p>
+
+                    <p class="lang sub-topicos2" key="motiv">...</p>
+                    <p class="lang txt-body1" key="motiv-what">...</p>
+                </div>
+            </div></br>
+
+            <!--<div class="lang topicos" key="moves"><p>...</p></div>
+            <div>
+                <p id="centerImg">
+                    <img src="../images/MoveLists/war_moveList.jpg" />
+                </p>
+            </div>-->
+
+        </div>
+    </div>
+
+    <!-----------------------FOOTER----------------------->
+    <div class="panel panel-footer">
+        <div id="footer"></div>
+    </div>
+
+</body>
+</html>

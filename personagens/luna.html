@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Luna</title>
+    <link rel="icon" href="../images/Geral/imgPerfilSF.PNG" />
+    <meta charset="utf-8" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="http://solarfighters.xyz/personagens/luna.html">
+    <meta property="og:title" content="Solar Fighters :: Luna">
+    <meta property="og:site_name" content="Solar Fighters">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://solarfighters.xyz/images/Geral/fb/luna_fb.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200"> 
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="966242223397117"/>
+
+    <!--
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+        -->
+
+    <link href="../css/estilo-geral.css" rel="stylesheet" />
+    <link href="../css/heros-pages.css" rel="stylesheet" />
+
+    <script>
+        var arrLang1 = {
+            'pt': {
+                'desc': 'Descrição',
+                'persona': 'Persona:',
+                'persona-what': 'Luna',
+                'especie': 'Espécie:',
+                'especie-what': 'Rochoso',
+                'parcerias': 'Parcerias:',
+                'parcerias-what': 'Terra',
+                'hist': 'História',
+                'hist-what': 'Ela surgiu de uma colisão com Gaia e permaneceram juntas até então. É um pequeno corpo celeste, mas um grande apoio para Gaia que, hora ou outra, dá novas perspectivas e reflexões acerca das situações a que se encontram. Nesses confrontos, ela é o braço direito da parceira, tanto física quanto psicologicamente.',
+                'perso': 'Personalidade',
+                'perso-what': 'Serena e afável com Gaia e a sinceridade é seu ponto forte nas tomadas de decisão. Ela está sempre acompanhada da parceira e nunca a deixa na mão, sempre disposta a ajudar.',
+                'motiv': 'Motivação',
+                'motiv-what': 'Acompanhar e ajudar Gaia a superar os obstáculos, pois assim estará ajudando a si mesma porque uma complementa a outra.',
+                'moves': 'Movimentos'
+            },
+            'en': {
+                'desc': 'Description',
+                'persona': 'Persona:',
+                'persona-what': 'Moon',
+                'especie': 'Sort:',
+                'especie-what': 'Rocky',
+                'parcerias': 'Partnership:',
+                'parcerias-what': 'Earth',
+                'hist': 'History',
+                'hist-what': 'It arose from a collision with Gaia and remained together until then. It is a small celestial body, but a great support for Gaia that, at one time or another, gives new perspectives and reflections on the situations to which they are. In these confrontations, she is the right arm of the partner, both physically and psychologically.',
+                'perso': 'Personality',
+                'perso-what': 'Serene and affable with Gaia and sincerity is her strong point in decision-making. She is always accompanied by her partner and never leaves it in her hand, always willing to help.',
+                'motiv': 'Motivation',
+                'motiv-what': 'Accompany and help Gaia to overcome the obstacles, because this way she will be helping herself because one complements the other.',
+                'moves': 'Moviments'
+            }
+        };
+
+        $(function () {
+            $("#header").load("../pages/header.html");
+            $("#footer").load("../pages/footer.html");
+            $("#hero-tabs").load("hero-tabs.html");
+        });
+    </script>
+
+    <style>
+        body {
+            background-image: url('../images/BGs/bg_luna.jpg');
+        }
+    </style>
+
+</head>
+<body>
+    <!------------------------HEADER------------------>
+    <img class="linha-degrade" src="../images/Geral/linha_degrade.png" />
+    <div class="panel panel-heading">
+        <div class="header">
+            <div class="pull-left" id="header"></div>
+            <!-------------------------------IDIOMAS-->
+            <a class="translate pull-right" id="pt"><img class="idioma" src="../../images/Geral/linguas_pt.png" /></a>
+            <a class="translate pull-right" id="en"><img class="idioma" src="../../images/Geral/linguas_en.png" /></a>
+        </div>
+    </div>        
+    <img class="linha-degrade" src="../images/Geral/linha_degrade.png" />
+
+    <div class="container container-mod2">
+        <!------------------------HERO TABS------------------>
+        <div id="hero-tabs"></div>
+
+        <div class="content">
+            <div>
+                <iframe src="https://www.youtube.com/embed/LjnA_QTcFf0?rel=0&vq=hd720" frameborder="0" class="hero-video"></iframe>
+            </div></br>
+
+            <div class="lang topicos" key="desc"><p>...</p></div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <img src="../images/Personagens/luna.jpg" />
+                </div>
+                <div class="hero-description table-cell">
+                    <p class="lang sub-topicos1" key="persona">...</p>
+                    <p class="lang txt-body1" key="persona-what">...</p>
+
+                    <p class="lang sub-topicos1" key="especie">...</p>
+                    <p class="lang txt-body1" key="especie-what">...</p>
+
+                    <p class="lang sub-topicos1" key="parcerias">...</p>
+                    <p class="txt-body1"><a class="lang" href="gaia.html" key="parcerias-what">...</a></p>
+
+                    <p class="lang sub-topicos2" key="hist">...</p>
+                    <p class="lang txt-body1" key="hist-what">...</p>
+
+                    <p class="lang sub-topicos2" key="perso">...</p>
+                    <p class="lang txt-body1" key="perso-what">...</p>
+
+                    <p class="lang sub-topicos2" key="motiv">...</p>
+                    <p class="lang txt-body1" key="motiv-what">...</p>
+                </div>
+            </div></br>
+
+            <!--<div class="lang topicos" key="moves"><p>...</p></div>            
+            <div>
+                <p id="centerImg">
+                    <img src="../images/MoveLists/luna_moveList.jpg" />
+                </p>
+            </div>-->
+
+        </div>
+    </div>
+
+    <!-----------------------FOOTER----------------------->
+    <div class="panel panel-footer">
+        <div id="footer"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿<style>
+    .heroes-tabs{
+        background-color:rgba(0,0,0, 0.5);
+        padding: 5px 5px  5px  5px ;
+        margin-bottom:10px;
+    }
+    .btn-switcher{
+        background-color:rgba(255, 0, 0, 0.2);
+        border-radius:0;
+        width:30px;
+        height: 26px;
+        padding:0px 0 0 0;
+        font-size:16px;
+        color:#ffd800;        
+    }
+</style>
+    
+<!-------------------------------------------------------------------------------TABS------------------------------------------------------------------------------>
+<div class="tab-content table-responsive">
+    <!------------------------ON------------------>
+    <div id="heroes-on" class="tab-pane">
+        <div class="pull-left">
+            <a class="btn btn-switcher" data-toggle="tab" href="#heroes-off"><</a>
+        </div>
+        <div class="heroes-tabs pull-left">
+            <a id="gaia-btn" href="../personagens/gaia.html">
+                <img src="../images/Personagens/gaia-portrait.jpg" />
+            </a>
+
+            <a id="metal-btn" href="../personagens/metal.html">
+                <img src="../images/Personagens/metal-portrait.jpg" />
+            </a>
+
+            <a id="vesper-btn" href="../personagens/yesper.html">
+                <img src="../images/Personagens/yesper-portrait.jpg" />
+            </a>
+
+            <a id="war-btn" href="../personagens/war.html">
+                <img src="../images/Personagens/war-portrait.jpg" />
+            </a>
+
+            <a id="luna-btn" href="../personagens/luna.html">
+                <img src="../images/Personagens/luna-portrait.jpg" />
+            </a>
+        </div>
+    </div>
+    <!------------------------OFF------------------>
+    <div id="heroes-off" class="tab-pane active">
+        <div class="pull-left">
+            <a class="btn btn-switcher" data-toggle="tab" href="#heroes-on">></a>
+        </div>
+    </div>
+</div>

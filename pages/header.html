@@ -1,0 +1,96 @@
+﻿<script src="../js/cookie.js"></script>
+<script src="../js/switchlanguage.js"></script>
+
+<script>
+    //google analytics
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-101971435-1', 'auto');
+        ga('send', 'pageview');
+    //google analytics//
+
+    var arrLang0 = {
+        'pt': {
+            'h_about': 'Sobre',
+            'h_characters': 'Personagens',
+            'h_how2play': 'Como Jogar',
+            'h_downloads': 'Demonstração',
+            'h_questions': 'Perguntas & Respostas',
+            'h_contact': 'Contato'
+        },
+        'en': {
+            'h_about': 'About',
+            'h_characters': 'Characters',
+            'h_how2play': 'How to play',
+            'h_downloads': 'Demonstration',
+            'h_questions': 'Asks & Answers',
+            'h_contact': 'Contact'
+        }
+    };
+
+    $(function () {
+        //carrega no começo
+        var lang = readCookie("idioma");
+
+        if (lang == null) {
+            lang = 'en';
+            writeCookie("idioma", lang, 1);
+        }
+
+        $('.lang').each(function (index, element) {
+            $(this).text(arrLang0[lang][$(this).attr('key')]);
+        });
+
+        //traduz
+        $('.translate').click(function () {
+            var lang = $(this).attr('id');
+            $('.lang').each(function (index, element) {
+                $(this).text(arrLang0[lang][$(this).attr('key')]);
+            });
+
+            writeCookie("idioma", lang, 1);
+        });
+    });
+
+</script>
+
+<style>
+    .nav-cell-mod {
+        display: table-cell;
+        padding: 0px 15px 0 15px;
+        color: #eeeeee;
+        font-size: 14px;
+        vertical-align: bottom;
+        opacity: .8;
+    }
+
+        .nav-cell-mod:hover {
+            text-decoration: none;
+            color: #ffe787;
+            opacity: 1;
+        }
+
+    #logo-img {
+        width: 60%;
+    }
+
+    .logo-cell-mod {
+        display: table-cell;
+        padding: 0 0 0 0;
+        margin: auto;
+    }
+</style>
+
+<div class="nav-row-mod">
+    <a class="logo-cell-mod" href="../index.html"> <img id="logo-img"  src="../images/Geral/imgPerfilSF.PNG" />  </a>            
+    <a class="lang nav-cell-mod" key="h_downloads" href="../pages/demo.html"></a>
+    <a class="lang nav-cell-mod" key="h_characters" href="../pages/characters.html"></a>
+    <a class="lang nav-cell-mod" key="h_how2play" href="../pages/how2play.html"></a>    
+    <a class="lang nav-cell-mod" key="h_about" href="../pages/about.html"></a>
+    <a class="lang nav-cell-mod" key="h_questions" href="../pages/faq.html"></a>
+    <a class="lang nav-cell-mod" key="h_contact" href="../pages/contact.php"></a>
+</div>
+

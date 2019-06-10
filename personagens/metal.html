@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Metalrock</title>
+    <link rel="icon" href="../images/Geral/imgPerfilSF.PNG" />
+    <meta charset="utf-8" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="http://solarfighters.xyz/personagens/metal.html">
+    <meta property="og:title" content="Solar Fighters :: Metalrock">
+    <meta property="og:site_name" content="Solar Fighters">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://solarfighters.xyz/images/Geral/fb/metal_fb.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200"> 
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="966242223397117"/>
+
+    
+
+    <!--
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+        -->
+
+    <link href="../css/estilo-geral.css" rel="stylesheet" />
+    <link href="../css/heros-pages.css" rel="stylesheet" />
+
+    <script>
+        var arrLang1 = {
+            'pt': {
+                'desc': 'Descrição',
+                'persona': 'Persona:',
+                'persona-what': 'Mercúrio',
+                'especie': 'Espécie:',
+                'especie-what': 'Rochoso',
+                'parcerias': 'Parcerias:',
+                'parcerias-what': 'Nenhuma',
+                'hist': 'História',
+                'hist-what': 'Mercúrio sempre foi o mais próximo e bajulador do Sol. Ele deixou seu zelo alheio de lado e ao passar dos milênios ele se tornou duro, agindo de forma ríspida ao tentar influenciar e afetar os outros. Talvez essa personalidade egoísta e mimada seja o resultado de ser o afortunado de receber tanta energia solar e não ter que compartilhar com ninguém.',
+                'perso': 'Personalidade',
+                'perso-what': 'Por ter um contato mais próximo do Sol se autoproclama um diferenciado, mas não passa de um grande arrogante. Ele é áspero e egoísta e por vezes demonstra frieza no tratamento alheio. Nanico e destemido, ele desafia qualquer um que o venha aborrecer.',
+                'motiv': 'Motivação',
+                'motiv-what': 'Ambição de adquirir poder e influência e ser o destaque local, independente das consequências dos seus atos e não se importando com as medidas necessárias para alcançar tal objetivo.',
+                'moves': 'Movimentos'
+            },
+            'en': {
+                'desc': 'Description',
+                'persona': 'Persona:',
+                'persona-what': 'Mercury',
+                'especie': 'Sort:',
+                'especie-what': 'Rocky',
+                'parcerias': 'Partnership:',
+                'parcerias-what': 'Nobody',
+                'hist': 'History',
+                'hist-what': 'Mercury has always been the nearest and flatterer of the Sun. He has left his zeal to the side and over the millennia he has become harsh, acting harshly in trying to influence and affect others. Perhaps this selfish, spoiled personality is the result of being fortunate to receive so much solar energy and not having to share it with anyone.',
+                'perso': 'Personality',
+                'perso-what': 'By having a closer contact with the Sun he proclaims himself a differentiated one, but he is but a great arrogant. He is rough and selfish and sometimes shows coldness in the treatment of others. Nanico and fearless, he defies anyone who comes to bore him.',
+                'motiv': 'Motivation',
+                'motiv-what': 'Ambition to acquire power and influence and be the local highlight, regardless of the consequences of their actions and not caring for the measures necessary to achieve this goal.',
+                'moves': 'Moviments'
+            }
+        };
+
+        $(function () {
+            $("#header").load("../pages/header.html");
+            $("#footer").load("../pages/footer.html");
+            $("#hero-tabs").load("hero-tabs.html");
+        });
+    </script>
+
+    <style>
+        body {
+            background-image: url('../images/BGs/bg_metal.jpg');
+        }
+    </style>
+
+</head>
+<body>
+    <!------------------------HEADER------------------>
+    <img class="linha-degrade" src="../images/Geral/linha_degrade.png" />
+    <div class="panel panel-heading">
+        <div class="header">
+            <div class="pull-left" id="header"></div>
+            <!-------------------------------IDIOMAS-->
+            <a class="translate pull-right" id="pt"><img class="idioma" src="../../images/Geral/linguas_pt.png" /></a>
+            <a class="translate pull-right" id="en"><img class="idioma" src="../../images/Geral/linguas_en.png" /></a>
+        </div>
+    </div>        
+    <img class="linha-degrade" src="../images/Geral/linha_degrade.png" />
+
+    <div class="container container-mod2">
+        <!------------------------HERO TABS------------------>
+        <div id="hero-tabs"></div>
+
+        <div class="content">
+            <div>
+                <iframe src="https://www.youtube.com/embed/_dctcQxn9d0?rel=0&vq=hd720" frameborder="0" class="hero-video"></iframe>
+            </div></br>
+
+            <div class="lang topicos" key="desc"><p>...</p></div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <img src="../images/Personagens/metal.jpg" />
+                </div>
+                <div class="hero-description table-cell">
+                    <p class="lang sub-topicos1" key="persona">...</p>
+                    <p class="lang txt-body1" key="persona-what">...</p>
+
+                    <p class="lang sub-topicos1" key="especie">...</p>
+                    <p class="lang txt-body1" key="especie-what">...</p>
+
+                    <p class="lang sub-topicos1" key="parcerias">...</p>
+                    <div class="txt-body1"><a class="lang" key="parcerias-what">...</a></div>
+
+                    <p class="lang sub-topicos2" key="hist">...</p>
+                    <p class="lang txt-body1" key="hist-what">...</p>
+
+                    <p class="lang sub-topicos2" key="perso">...</p>
+                    <p class="lang txt-body1" key="perso-what">...</p>
+
+                    <p class="lang sub-topicos2" key="motiv">...</p>
+                    <p class="lang txt-body1" key="motiv-what">...</p>
+                </div>
+            </div></br>
+
+            <!--<div class="lang topicos" key="moves"><p>...</p></div>
+            <div>
+                <p id="centerImg">
+                    <img src="../images/MoveLists/metal_moveList.jpg" />
+                </p>
+            </div>-->
+
+        </div>
+    </div>
+
+    <!-----------------------FOOTER----------------------->
+    <div class="panel panel-footer">
+        <div id="footer"></div>
+    </div>
+
+</body>
+</html>

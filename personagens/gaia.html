@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Gaia</title>
+    <link rel="icon" href="../images/Geral/imgPerfilSF.PNG" />
+	<meta charset="utf-8" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="http://solarfighters.xyz/personagens/gaia.html">
+    <meta property="og:title" content="Solar Fighters :: Gaia">
+    <meta property="og:site_name" content="Solar Fighters">
+    <meta property="og:description" content="temp">
+    <meta property="og:image" content="http://solarfighters.xyz/images/Geral/fb/gaia_fb.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200"> 
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="966242223397117"/>
+
+    
+
+    <!--
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+            -->
+
+    <link href="../css/estilo-geral.css" rel="stylesheet" />
+    <link href="../css/heros-pages.css" rel="stylesheet" />
+    
+
+    <script>
+        var arrLang1 = {
+            'pt': {
+                'desc': 'Descrição',
+                'persona': 'Persona:',
+                'persona-what': 'Terra',
+                'especie': 'Espécie:',
+                'especie-what': 'Rochoso',
+                'parcerias': 'Parcerias:',
+                'parcerias-what': 'Luna',
+                'hist': 'História',
+                'hist-what': '    Gaia surgiu gradualmente há bilhões de anos em meio a um período nebuloso. Ela faz parte do grupo dos telúricos (rochosos) e, durante sua formação, seu temperamento era extremamente elevado com pressões internas que explodiam constantemente. Ao longo de sua existência ela acalmou-se e tomou sua posição de destaque que o guarda até hoje. Muitos a consideram um ‘milagre’ em meio a um número incontável de descobertas e se sustenta como nenhum outro seja promovendo a vida ou reagindo a qualquer mal que viera a acontecer. Por essas qualidades ela se tornou a queridinha e ganhou mais notoriedade que os demais.',
+                'perso': 'Personalidade',
+                'perso-what': 'Normalmente calma, cuidando da sua saúde ecossistêmica, mas, por vezes, é também tempestuosa e impiedosa quando provocada.',
+                'motiv': 'Motivação',
+                'motiv-what':'Seu desejo sempre foi em prol do sustento da vida e alcançar a plenitude de sua integridade, mas o mais importante, agora, é se defender e provar o valor da sua dignidade.',
+                'moves': 'Movimentos'
+            },
+            'en': {
+                'desc': 'Description',
+                'persona': 'Persona:',
+                'persona-what': 'Earth',
+                'especie': 'Sort:',
+                'especie-what': 'Rocky',
+                'parcerias': 'Partnership:',
+                'parcerias-what': 'Luna',
+                'hist': 'History',
+                'hist-what': '    Gaia gradually emerged billions of years ago amidst a hazy period. It is part of the group of tellurians (rocky), and during its formation, its temperament was extremely high with internal pressures that exploded constantly. Throughout her existence she has calmed down and taken her prominent position that keeps her to this day. Many consider it a "miracle" amid a countless number of discoveries and sustain itself like no other is promoting life or reacting to any evil that has come to pass. By these qualities she became the darling and gained more notoriety than the others.',
+                'perso': 'Personality',
+                'perso-what': 'Usually calm, taking care of their ecosystemic health, but sometimes it is also tempestuous and ruthless when provoked.',
+                'motiv': 'Motivation',
+                'motiv-what': 'Her desire has always been for the sustenance of life and to achieve the fullness of his integrity, but the most important, now, is to defend and prove the value of her dignity.',
+                'moves': 'Moviments'
+            }
+        };
+
+        $(function () {
+            $("#header").load("../pages/header.html");
+            $("#footer").load("../pages/footer.html");
+            $("#hero-tabs").load("hero-tabs.html");
+        });
+    </script>
+
+    <style>
+        body {
+            background-image: url('../images/BGs/bg_gaia.jpg');
+        }
+    </style>
+</head>
+<body>
+    <!------------------------HEADER------------------>
+    <img class="linha-degrade" src="../images/Geral/linha_degrade.png" />
+    <div class="panel panel-heading">
+        <div class="header">
+            <div class="pull-left" id="header"></div>
+            <!-------------------------------IDIOMAS-->
+            <a class="translate pull-right" id="pt"><img class="idioma" src="../../images/Geral/linguas_pt.png" /></a>
+            <a class="translate pull-right" id="en"><img class="idioma" src="../../images/Geral/linguas_en.png" /></a>
+        </div>
+    </div>         
+    <img class="linha-degrade" src="../images/Geral/linha_degrade.png" />
+
+    <div class="container container-mod2">
+        <!------------------------HERO TABS------------------>
+        <div id="hero-tabs"></div>
+        <!------------------------CONTEUDO PRINCIPAL------------------>
+        <div class="content">
+            <div>
+                <iframe src="https://www.youtube.com/embed/xprrAfDHSP8?rel=0&vq=hd720" frameborder="0" class="hero-video"></iframe>
+            </div></br>
+
+            <div class="lang topicos" key="desc"><p>...</p></div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <img src="../images/Personagens/gaia.jpg" />
+                </div>
+                <div class="hero-description table-cell">
+                    <p class="lang sub-topicos1" key="persona">...</p>
+                    <p class="lang txt-body1" key="persona-what">...</p>
+
+                    <p class="lang sub-topicos1" key="especie">...</p>
+                    <p class="lang txt-body1" key="especie-what">...</p>
+
+                    <p class="lang sub-topicos1" key="parcerias">...</p>
+                    <p class="txt-body1"><a class="lang" href="luna.html" key="parcerias-what">...</a></p>
+                    
+                    <p class="lang sub-topicos2" key="hist">...</p>
+                    <p class="lang txt-body1" key="hist-what">...</p>    
+                    
+                    <p class="lang sub-topicos2" key="perso">...</p>
+                    <p class="lang txt-body1" key="perso-what">...</p>                        
+                    
+                    <p class="lang sub-topicos2" key="motiv">...</p>                        
+                    <p class="lang txt-body1" key="motiv-what">...</p>                    
+                </div>
+            </div></br>
+
+            <!--<div class="lang topicos" key="moves"><p>...</p></div>
+            <div>
+                <p id="centerImg">
+                    <img src="../images/MoveLists/gaia_moveList.jpg" />
+                </p>
+            </div>-->
+
+        </div>
+    </div>
+
+    <!-----------------------FOOTER----------------------->
+    <div class="panel panel-footer">
+        <div id="footer"></div>
+    </div>
+
+</body>
+</html>
